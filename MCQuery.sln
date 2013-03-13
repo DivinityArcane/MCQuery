@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCQuery", "MCQuery\MCQuery.csproj", "{D8D63335-69E4-445E-B74E-C430B2C70678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{9C914C70-7692-4F69-9FF0-079F7848DC6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8D63335-69E4-445E-B74E-C430B2C70678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D63335-69E4-445E-B74E-C430B2C70678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D63335-69E4-445E-B74E-C430B2C70678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D63335-69E4-445E-B74E-C430B2C70678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C914C70-7692-4F69-9FF0-079F7848DC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C914C70-7692-4F69-9FF0-079F7848DC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C914C70-7692-4F69-9FF0-079F7848DC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C914C70-7692-4F69-9FF0-079F7848DC6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
