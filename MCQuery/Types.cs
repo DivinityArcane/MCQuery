@@ -18,4 +18,11 @@
 
         public System.Collections.Generic.List<string> Players;
     }
+
+    public interface ServerQuery
+    {
+        void Connect (string host, int port = 25565, double timeout = 2.5);
+        bool Success ();
+        ServerInfo Info ();
+    }
 }

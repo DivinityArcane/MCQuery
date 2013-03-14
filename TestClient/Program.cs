@@ -11,43 +11,45 @@ namespace TestClient
 
             /*
             var mcq = new MCSimpleQuery();
-            mcq.Query(host);
+            mcq.Connect(host);
 
-            if (mcq.Success)
+            if (mcq.Success())
             {
-                Console.WriteLine("Server name: {0}", mcq.Info.Name);
-                Console.WriteLine("Server version: {0}", mcq.Info.Version);
-                Console.WriteLine("Server protocol: {0}", mcq.Info.Protocol);
-                Console.WriteLine("Online players: {0}", mcq.Info.OnlinePlayers);
-                Console.WriteLine("Max players: {0}", mcq.Info.MaxPlayers);
-                Console.WriteLine("Latency: {0}ms", mcq.Info.Latency);
+                var info = mcq.Info();
+                Console.WriteLine("Server name: {0}", info.Name);
+                Console.WriteLine("Server version: {0}", info.Version);
+                Console.WriteLine("Server protocol: {0}", info.Protocol);
+                Console.WriteLine("Online players: {0}", info.OnlinePlayers);
+                Console.WriteLine("Max players: {0}", info.MaxPlayers);
+                Console.WriteLine("Latency: {0}ms", info.Latency);
             }
             else Console.WriteLine("Failed. Is the game up?");*/
 
             var q = new MCQuery.MCQuery();
             q.Connect(host);
-            if (q.Success)
+            if (q.Success())
             {
-                Console.WriteLine("Server name: {0}", q.Info.Name);
-                Console.WriteLine("Server version: {0}", q.Info.Version);
-                Console.WriteLine("Server protocol: {0}", q.Info.Protocol);
-                Console.WriteLine("Game ID: {0}", q.Info.GameID);
-                Console.WriteLine("Game type: {0}", q.Info.GameType);
-                Console.WriteLine("Map name: {0}", q.Info.Map);
-                Console.WriteLine("Plugins: {0}", q.Info.Plugins);
-                Console.WriteLine("Protocol: {0}", q.Info.Protocol);
-                Console.WriteLine("Software: {0}", q.Info.Software);
-                Console.WriteLine("Host IP: {0}", q.Info.HostIP);
-                Console.WriteLine("Host Port: {0}", q.Info.HostPort);
-                Console.WriteLine("Online players: {0}", q.Info.OnlinePlayers);
-                Console.WriteLine("Max players: {0}", q.Info.MaxPlayers);
-                Console.WriteLine("Latency: {0}ms", q.Info.Latency);
+                var info = q.Info();
+                Console.WriteLine("Server name: {0}", info.Name);
+                Console.WriteLine("Server version: {0}", info.Version);
+                Console.WriteLine("Server protocol: {0}", info.Protocol);
+                Console.WriteLine("Game ID: {0}", info.GameID);
+                Console.WriteLine("Game type: {0}", info.GameType);
+                Console.WriteLine("Map name: {0}", info.Map);
+                Console.WriteLine("Plugins: {0}", info.Plugins);
+                Console.WriteLine("Protocol: {0}", info.Protocol);
+                Console.WriteLine("Software: {0}", info.Software);
+                Console.WriteLine("Host IP: {0}", info.HostIP);
+                Console.WriteLine("Host Port: {0}", info.HostPort);
+                Console.WriteLine("Online players: {0}", info.OnlinePlayers);
+                Console.WriteLine("Max players: {0}", info.MaxPlayers);
+                Console.WriteLine("Latency: {0}ms", info.Latency);
 
-                if (q.Info.Players != null && q.Info.Players.Count > 0)
+                if (info.Players != null && info.Players.Count > 0)
                 {
                     Console.WriteLine("Players: ");
 
-                    foreach (String player in q.Info.Players)
+                    foreach (String player in info.Players)
                     {
                         Console.WriteLine(player);
                     }

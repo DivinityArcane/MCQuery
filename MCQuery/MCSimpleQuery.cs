@@ -2,15 +2,15 @@
 
 namespace MCQuery
 {
-    public class MCSimpleQuery
+    public class MCSimpleQuery : ServerQuery
     {
         private bool success = false;
         private ServerInfo info;
 
-        public bool Success { get { return success; } }
-        public ServerInfo Info { get { return info; } }
+        public bool Success () { return success; }
+        public ServerInfo Info () { return info; }
 
-        public void Query (string host, int port = 25565, double timeout = 2.5)
+        public void Connect (string host, int port = 25565, double timeout = 2.5)
         {
             try
             {
